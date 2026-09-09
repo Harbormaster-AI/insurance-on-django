@@ -9,7 +9,7 @@ RUN apt-get update \
        pkg-config \
        default-libmysqlclient-dev \
        build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
 
 RUN pip install --no-cache-dir -r requirements.txt
 
